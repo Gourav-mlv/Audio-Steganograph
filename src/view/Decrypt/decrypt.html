@@ -1,0 +1,24 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decryption</title>
+</head>
+<!-- action='http://localhost:3000/upload -->
+<!--  -->
+<body>
+    <h1>Decryption</h1>
+    <form id='uploadDec'>
+        <!-- //to upload audio file -->
+        <label>Audio file (.wav) </label>
+        <!-- //audio file -->
+        <input type="file" id ='file' name="AudioFile">
+        <input type="submit" value="Decrypt" onsubmit="performPostRequest()">
+    </form>
+    <button onclick="document.location='../Encrypt/encrypt.html'">Encryption</button>
+    <script src = "decrypt.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

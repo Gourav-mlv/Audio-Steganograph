@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption</title>
+</head>
+
+<body>
+    <h1>Encryption</h1>
+    <form action='http://localhost:3000/upload' method='post' encType="multipart/form-data">
+        <!-- //to upload audio file -->
+        <label>Audio file (.wav) </label>
+        <!-- //audio file -->
+        <input type="file" name="AudioFile">
+        <br> <br>
+        <label>Secret text</label>
+        <!-- //secret text -->
+        <input type="text" name="SecretText" placeholder="Enter text to be encrypted"> </input>
+
+        <input type="submit" value="Upload">
+
+    </form>
+    <button onclick="document.location='../Decrypt/decrypt.html'">Decryption</button>
+
+</body>
+
+</html>
