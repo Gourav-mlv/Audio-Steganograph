@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    background: #efefef;
+    font-family:arial;
+    background-color:rgb(216, 223, 231);
+    font-style: italic ;
+    font-size:medium;
+    
+}
+
+label{
+    font-size: large;
+    padding-top: 25px;
+    font-variant-caps: petite-caps;
+}
+input{
+    font-size: large;
+   
+    font-variant-caps: petite-caps;
+}
+marquee{
+    font-style:italic;
+  padding-top: 25px;
+  font-size:30px;
+}

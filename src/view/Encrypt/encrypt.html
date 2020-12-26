@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encryption</title>
+    <link rel = "stylesheet" href = "encrypt.css"/>
+     <!--css!-->
+<style>
+    .button {
+  border-radius: 4px;
+  background-color: greenyellow;
+  border: none;
+  color:black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+ <!--css!-->
+
+
+</style>
 </head>
+    
+  
+    
+
 
 <body>
-    <h1>Encryption</h1>
+    <p><marquee width=50%>Welcome to Encryption page</marquee></p>
+    <br> <br><br><br><br>
+    
     <form action='http://localhost:3000/upload' method='post' encType="multipart/form-data">
         <!-- //to upload audio file -->
         <label>Audio file (.wav) </label>
@@ -17,12 +69,13 @@
         <label>Secret text</label>
         <!-- //secret text -->
         <input type="text" name="SecretText" placeholder="Enter text to be encrypted"> </input>
-
+        
         <input type="submit" value="Upload">
 
     </form>
-    <button onclick="document.location='../Decrypt/decrypt.html'">Decryption</button>
-
+    <br><br><br><br><br> 
+    <button class="button" onclick="document.location='../Decrypt/decrypt.html'"><span>Decryption</span></button><br>
+     
 </body>
 
 </html>

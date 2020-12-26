@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decryption</title>
-    <link rel = "stylesheet" href = "decrypt.css"/>
-
-     <!--css!-->
+    <title>Audio steganography</title>
+    <link rel = "stylesheet" href = "index.css"/>
+    <!--css!-->
 <style>
     .button {
   border-radius: 4px;
@@ -40,7 +39,6 @@
 
 .button:hover span {
   padding-right: 25px;
-  
 }
 
 .button:hover span:after {
@@ -51,22 +49,18 @@
  <!--css!-->
 
 
+</style>
 </head>
-<!-- action='http://localhost:3000/upload -->
-<!--  -->
+    
+
+
 <body>
-    <p><marquee width=50%>Welcome to Decryption page</marquee></p>
+    <p><marquee width=50%>Welcome to HomePage</marquee></p>
     <br><br><br><br><br>
-   <form action='http://localhost:3000/upload' method='post' encType="multipart/form-data">
-        <!-- //to upload audio file -->
-        <label>Audio file (.wav) </label>
-        <!-- //audio file -->
-        <input type="file" id ='file' name="AudioFile">
-        <input type="hidden" name="SecretText" value = '#####'> </input>
-        <input type="submit" value="Decrypt">
-    </form>
-    <br><br><br><br><br><br><br>
-    <button class="button" onclick="document.location='../Encrypt/encrypt.html'"><span>Encryption</span></button>
+   
+   <button class="button" onclick="document.location='../Encrypt/encrypt.html'"><span>Encryption</span></button>
+    <button class="button" onclick="document.location='../Decrypt/decrypt.html'"><span>Decryption</span></button>
+
 
 </body>
 
